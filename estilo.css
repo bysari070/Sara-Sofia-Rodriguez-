@@ -1,0 +1,40 @@
+body {
+    background-color: indianred;
+    }
+    p {
+    background-color: rgb(92, 100, 205);
+    }
+    .parrafo {
+            color: deepskyblue;
+        }
+    #ParrafoUnico {
+            color: rgb(142, 245, 151);
+        }
+    #contenedor1 {
+        width: 50vw;
+        height: 80vh;
+        border: 1px purple solid;
+        margin: 15px;
+    }
+    #contenedor2 {
+        width: 50vw;
+        height: 80vh;
+        border: 1px blue solid;
+        margin: 15px;
+    }
+    .cuadrado {
+        width: 25vw;
+        height: 40vh;
+        border: 1px beige solid;
+        background-color: gold;
+        margin: 15px;
+    
+    }
+    .cuadrados {
+        width: 25vw;
+        height: 40vh;
+        background-color: lightseagreen;
+        border: 1px pink solid;
+        margin: 15px;
+    
+    }
