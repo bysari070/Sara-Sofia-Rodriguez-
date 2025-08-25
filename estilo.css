@@ -1,40 +1,72 @@
 body {
-    background-color: indianred;
+    background-color: rgb(247, 199, 243);
     }
     p {
-    background-color: rgb(92, 100, 205);
+    background-color: rgb(203, 225, 245);
     }
     .parrafo {
             color: deepskyblue;
         }
     #ParrafoUnico {
-            color: rgb(142, 245, 151);
+            color: rgb(244, 0, 0);
         }
     #contenedor1 {
         width: 50vw;
         height: 80vh;
         border: 1px purple solid;
         margin: 15px;
+        position: relative;
     }
     #contenedor2 {
         width: 50vw;
         height: 80vh;
         border: 1px blue solid;
         margin: 15px;
+       display: flex;
+       flex-direction: row-reverse;
+       flex-wrap: wrap;
+       align-content: space-around;
+       justify-content: space-evenly;
+       align-items: center;
     }
     .cuadrado {
-        width: 25vw;
-        height: 40vh;
+        width: 31%;
+        height: 31%;
         border: 1px beige solid;
         background-color: gold;
         margin: 15px;
+        position:absolute
     
     }
     .cuadrados {
-        width: 25vw;
-        height: 40vh;
+        width: 31%;
+        height: 31%;
         background-color: lightseagreen;
-        border: 1px pink solid;
+        border: 1px rgb(192, 253, 255) solid;
         margin: 15px;
     
     }
+    #cuadro1 {
+        top: 0%;
+        left: 0%;
+}
+    #cuadro2 {
+        top: 31%;
+        left: 31%;
+}
+    #cuadro3 {
+        top: 62%;
+        left: 62%;
+}
+    #cuadrado1 {
+        top: 0%;
+        right: 0%;
+}
+    #cuadrado2 {
+        top: 31%;
+        right: 31%;
+}
+    #cuadrado3 {
+        top: 62%;
+        right: 62%;
+}
