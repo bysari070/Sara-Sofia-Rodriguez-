@@ -70,3 +70,8 @@ body {
         top: 62%;
         right: 62%;
 }
+#lienzo {
+     width: 50vw;
+        height: 80vh;
+        border: 1px rgb(225, 245, 152) solid;
+}
