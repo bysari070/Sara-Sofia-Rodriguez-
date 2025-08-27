@@ -1,0 +1,152 @@
+
+#tituloDibujo {
+text-align: center;
+}
+
+#lienzo {
+width: 700px;
+height: 600px;
+background-image: url("https://blog.dogfydiet.com/wp-content/uploads/2024/05/Origen-e-historia8.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid black;
+margin: 0 auto;
+position: relative;
+}
+
+.circulo {
+    width: 120px; /* ancho */
+    height: 120px; /* alto */
+    background-color: rgb(77, 233, 80); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 1px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 10px; /* posición desde el borde superior del lienzo */
+    right: 10px; /* posición desde el borde izquierdo del lienzo */
+}
+.circuloo {
+    width: 20px; /* ancho */
+    height: 20px; /* alto */
+    background-color: rgb(0, 0, 0); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 1px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 10px; /* posición desde el borde superior del lienzo */
+    right: 10px; /* posición desde el borde izquierdo del lienzo */
+    }
+    .circulos {
+    width: 20px; /* ancho */
+    height: 20px; /* alto */
+    background-color: rgb(0, 0, 0); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 1px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 10px; /* posición desde el borde superior del lienzo */
+    right: 10px; /* posición desde el borde izquierdo del lienzo */
+    }
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(251, 230, 0);
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+ 
+/* línea hecha con border*/
+.lineaHorizontal {
+    width: 100px;
+    height: 0px;
+    border: 3px solid rgb(255, 0, 0); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+
+/* línea hecha con border*/
+.lineaVertical1 {
+    width: 0px;
+    height: 100px;
+    border: 3px solid rgb(255, 102, 0); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 10px;
+    
+}
+.lineaVertical {
+    width: 0px;
+    height: 100px;
+    border: 3px solid rgb(0, 140, 255); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 10px;
+ 
+}
+#circulos {
+    top: 20%;
+    right: 60%
+}
+#lineaver1 {
+    top: 70%;
+    right: 64%;
+}
+#lineaver2 {
+    top: 70%;
+    right: 70%;
+}
+.lineaVertical2 {
+    width: 100px;
+    height: 0px;
+    border: 3px solid rgb(255, 0, 221); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+
+#lineas1 {
+     top: 45%;
+    left: 30%;
+    transform: rotate(45deg)
+}
+#lineahor1{
+    top: 45%;
+    left: 20%;
+    transform: rotate(115deg)
+}
+#amarillo{
+    top: 55%;
+    left: 25%;
+}
+.oreja {
+    width: 0; 
+  height: 0; 
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid rgb(103, 226, 250);
+  transform: rotate(30deg);
+  
+  }
+  #oreja1 {
+    top: 17%;
+    right: 55%;
+    position:absolute
+  }
+  #oreja2 {
+    top: 17%;
+    left: 18%;
+    position:absolute
+  }
+  .orejaa {
+    width: 0; 
+  height: 0; 
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid rgb(142, 103, 250);
+  transform: rotate(300deg);
+  }
+#ojo1 {
+    top: 25%;
+    right: 70%;
+  }
+  #ojo2 {
+    top: 25%;
+    right: 65%;
+  }
