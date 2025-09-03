@@ -9,6 +9,7 @@ body {
             font-weight: 300;
             font-style: normal;
             font-size: 5em;
+            text-align: center;
         }
         .titulo:hover {
             font-weight: 700;

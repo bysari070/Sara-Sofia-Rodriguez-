@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(247, 242, 199);
+    }
+#Mifoto {
+width: 700px;
+height: 600px;
+background-image: url("file:///Users/estudiantes/Downloads/IMG_7169.png");
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid black;
+margin: 0 auto;
+position: relative;
+}
+    .titulo {
+            font-family: "Story Script", ;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 5em;
+            text-align: center;
+        }
+        .titulo:hover {
+            font-weight: 700;
+            font-size: 5em;
+            color: rgb(243, 200, 243);
+            cursor: pointer;
+        }
+    .parrafo {
+            color: rgb(7, 7, 7);
+            font-size: 2em;
+        }
+
+        .parrafo1 {
+            color: rgb(179, 164, 239);
+            font-size: 1.5em;
+        }
+        .parrafo2 {
+            color: rgb(155, 188, 253);
+            font-size: 1.4em;
+        }
+
+    #ParrafoUnico {
+            color: rgb(244, 0, 0);
+        }

@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(207, 236, 242);
+    }
+#tituloDibujo {
+text-align: center;
+font-size: 5em;
+color: rgb(99, 109, 243);
+
+}
+
+#Paisaje {
+width: 700px;
+height: 600px;
+background-image: url("https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/lausanne.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid black;
+margin: 0 auto;
+position: relative;
+}
+
+.parrafo {
+    color: rgb(51, 114, 250);
+    font-size: 1.3em;
+}
