@@ -26,7 +26,7 @@ position: relative;
         }
     .parrafo {
             color: rgb(7, 7, 7);
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         .parrafo1 {
@@ -104,9 +104,11 @@ h1 {
 #boton {
   font-size: 0.9em;
   background-color: #efd388f0;
-  color: rgb(0, 0, 0);
+  color:olive;
   margin-bottom: 2em;
   cursor: pointer;
+  font-style: oblique;
+  font-weight: 1000px;
 }
 
 
