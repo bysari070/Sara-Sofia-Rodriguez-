@@ -21,7 +21,7 @@ position: relative;
         .titulo:hover {
             font-weight: 700;
             font-size: 5em;
-            color: rgb(243, 200, 243);
+            color:rgb(243, 200, 243);
             cursor: pointer;
         }
     .parrafo {
@@ -37,3 +37,76 @@ position: relative;
             color: rgb(155, 188, 253);
             font-size: 1.4em;
         }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  
+  
+  /* Código para poner un cursor personalizado*/
+ /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto; */
+
+}
+
+
+h1 {
+  font-size: 2em;
+  font-style: italic;
+  color: chocolate;
+}
+
+#contenedor {
+  margin: auto 1em;
+  text-align: center;
+
+}
+
+#tituloPagina {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-family: sans-serif;
+}
+
+#foto {
+ height: 300px;
+  border: chocolate solid 5px;
+  margin-top: 15px;
+}
+
+.tituloPrediccion {
+  font-size: 2em;
+  font-style: oblique;
+  color: olive;
+}
+
+.prediccion {
+  font-size: 1.5em;
+  font-style: italic;
+  color: chocolate;
+}
+
+.prediccion::first-letter {
+  text-transform: uppercase;
+}
+
+#boton {
+  font-size: 0.9em;
+  background-color: #efd388f0;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+
