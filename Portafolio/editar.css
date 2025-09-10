@@ -3,11 +3,10 @@ body {
     }
 #Mifoto {
 width: 700px;
-height: 600px;
-background-image: url("../Sara-Sofia-Rodriguez-/Portafolio/imagenes/imagen1.jpg");
-background-repeat: no-repeat;
+height: 1000px;
+background-image: url("../Portafolio/imagenes/imagen1.jpg");
 background-size: cover;
-border: 1px solid black;
+border: 2px solid black;
 margin: 0 auto;
 position: relative;
 }
@@ -25,18 +24,58 @@ position: relative;
             cursor: pointer;
         }
     .parrafo {
-            color: rgb(7, 7, 7);
+            color: rgb(155, 188, 253);
             font-size: 1.5em;
         }
 
         .parrafo1 {
-            color: rgb(179, 164, 239);
+            color: rgb(0, 0, 0);
             font-size: 1.5em;
         }
         .parrafo2 {
             color: rgb(155, 188, 253);
             font-size: 1.4em;
         }
+         
+        .parrafo3 {
+            color: rgb(155, 188, 253);
+            font-size: 1.4em;
+        }
+ 
+        .parrafo4 {
+            color: rgb(155, 188, 253);
+            font-size: 1.4em;
+        }
+ 
+        .parrafo5 {
+            color: rgb(155, 188, 253);
+            font-size: 1.4em;
+        }
+        
+        .parrafo6 {
+            color: chocolate;
+            font-size: 1.8em;
+            text-align: center;
+        }
+ 
+        .parrafo7 {
+            color: rgb(253, 155, 180);
+            font-size: 1.4em;
+        }
+
+        .parrafo8 {
+            color: rgb(253, 155, 180);
+            font-size: 1.4em;
+        }
+
+        .parrafo9 {
+            color: rgb(253, 155, 180);
+            font-size: 1.4em;
+        }
+
+
+
+
 
 html {
   box-sizing: border-box;
