@@ -14,7 +14,7 @@ height: 600px;
 background-image: url("https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/lausanne.jpg");
 background-repeat: no-repeat;
 background-size: cover;
-border: 1px solid black;
+border: 5px solid chocolate;
 margin: 0 auto;
 position: relative;
 }
@@ -22,4 +22,27 @@ position: relative;
 .parrafo {
     color: rgb(51, 114, 250);
     font-size: 1.3em;
+}
+
+.tituloViajes {
+    color: chocolate;
+    font-size: 1.8em;
+    font-style: italic;
+    text-align: center;
+}
+
+.parrafito {
+    color: rgb(69, 172, 136);
+    font-size: 1.3em;
+}
+
+#Mifoto2 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen1.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+
 }

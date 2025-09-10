@@ -41,12 +41,12 @@ const titulos = [
 ];
 
 const frases = [
-  "Eres la capital de Suiza, la ciudad donde estudio Albert Einstein. Una persona muy inteligente y clasica",
+  "Eres la capital de Suiza, la ciudad donde estudio Albert Einstein. Una persona muy inteligente y clásica",
   "Eres pequeña pero hermosa, tienes el Matterhorn, la montaña iconica del chocolate Toblerone. Eres aventurera y única",
   "Eres la ciudad de los juegos olimpicos, tienes un Lago hermoso y muchas escaleras. Eres jovial y querida por muchos",
   "Eres una de las ciudades más grandes de Suiza, tienes muchs museos, eres muy historica y tienes la sede de las Naciones Unidas. Tienes un alma sabia y eres muy inteligente",
-  "Eres de as ciudades más caras del mundo, tienes a una de las fabricas de chocolate más famosas del mundo. Eres muy fancy, linda y especial",
-  "Eres una ciudad medievl, tienes un puente hermoso muy clasico y tienes un Carnaval muy memorable dentro de Suiza. Eres hermosa, brillante y divertida",
+  "Eres de las ciudades más caras del mundo, tienes a una de las fabricas de chocolate más famosas del mundo. Eres muy fancy, linda y especial",
+  "Eres una ciudad medieval, tienes un puente hermoso muy clasico y tienes un Carnaval muy memorable dentro de Suiza. Eres hermosa, brillante y divertida",
 ];
 
 // Trae los elementos del HTML que tienen ese id
