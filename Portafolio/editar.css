@@ -27,6 +27,11 @@ position: relative;
             color: rgb(155, 188, 253);
             font-size: 1.5em;
         }
+ .parrafoo {
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            font-style: italic;  
+        }
 
         .parrafo1 {
             color: rgb(0, 0, 0);
