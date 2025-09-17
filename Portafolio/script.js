@@ -80,3 +80,30 @@ boton.addEventListener("click", function () {
 });
 
 generarPrediccion();
+
+
+const elementoHablador = document.querySelector('.elemento-hablador');
+
+// Verifica si la Web Speech API está soportada por el navegador
+if ('speechSynthesis' in window) {
+  elementoHablador.addEventListener('mouseover', () => {
+    // Obtiene el objeto de síntesis de voz
+    const synth = window.speechSynthesis;
+    const texto = elementoHablador.textContent; // El texto que se leerá
+
+    // Si hay una voz hablando, cancela la anterior
+    if (synth.speaking) {
+      synth.cancel();
+    }
+
+    // Crea una nueva instancia de SpeechSynthesisUtterance
+    const utter = new SpeechSynthesisUtterance(texto);
+
+    // Habla el texto
+    synth.speak(utter);
+  });
+} else {
+  console.log('La Web Speech API no es soportada por tu navegador.');
+  // Opcionalmente, puedes deshabilitar o advertir al usuario
+  elementoHablador.style.cursor = 'default'; // Cambia el cursor para indicar que no es interactivo para la voz
+}
