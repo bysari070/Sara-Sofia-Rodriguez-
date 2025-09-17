@@ -45,5 +45,73 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+}
 
+.frase  {
+    color:chocolate;
+    font-size: 1.3em;
+    font-style: italic;
+    text-align:center;
+}
+
+
+#Mifoto1 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen3.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+left: 100%;
+}
+#Mifoto3 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen4.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+left: 100%;
+}
+#Mifoto4 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen5.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+left: 100%;
+}
+#Mifoto5 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen10.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+left: 100%;
+}
+#Mifoto6 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen7.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+left: 100%;
+}
+#Mifoto7 {
+width: 400px;
+height: 500px;
+background-image: url("../Portafolio/imagenes/imagen12.jpg");
+background-size: cover;
+border: 5px solid chocolate;
+margin-top: 15px;
+margin:0 auto;
+left: 100%;
 }
