@@ -107,3 +107,5 @@ if ('speechSynthesis' in window) {
   // Opcionalmente, puedes deshabilitar o advertir al usuario
   elementoHablador.style.cursor = 'default'; // Cambia el cursor para indicar que no es interactivo para la voz
 }
+
+

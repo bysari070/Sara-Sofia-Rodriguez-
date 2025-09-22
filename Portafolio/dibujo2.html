@@ -4,11 +4,16 @@
    <title>dibujo</title>
 <!-- Importar la hoja de estilos de la página -->​
     <link rel="stylesheet" href="editarsuiza.css" />​
-
+    <script src="script.js" defer ></script>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Imagen</title>
+    <link rel="stylesheet" href="editarsuiza.css">
 
 </head>
 
 <body>
+
 <h1 id="tituloDibujo">Suiza</h1>
 <div id="Paisaje"></div>
     <p class="parrafo"> - Esta foto fue tomada en Lausanne, el sitio donde viví por 6 meses</p>
@@ -23,6 +28,19 @@
     <p class="parrafito"> 6. Visite a mi hermano que vive en Alicante, España </p>
     <p class="parrafito"> 7. Viví un semana en un motorhome sin baño </p>
     <p class="parrafito"> 8. Descubrí mi postre favorito llamado Trdelnik o Chimney Cake </p>
+
+<textarea id="textoParaHablar"> Era intercambio académico pero la verdad no estudie nada </textarea>
+  <button onclick="hablarTexto()">Hablar</button>
+
+  <script>
+    function hablarTexto() {
+      const texto = document.getElementById('textoParaHablar').value;
+      const mensaje = new SpeechSynthesisUtterance(texto);
+      window.speechSynthesis.speak(mensaje);
+    }
+  </script>
+
+
 
  <div id="Mifoto2"></div> 
     <p class="frase"> Ese día fue mi primer viaje dentro de Suiza, fui a Lucerna </p>     
@@ -40,6 +58,12 @@
     <p class="frase"> Positano fue una ciudad preciosa, tenia hermosos paisajes y un gelato delicioso </p>
 
 </div>
+<div class="imagenportada">
+        <img src=".//imagenes/imagen15.jpg" alt="Imagen animada" class="animated-image">
+    </div>
+ <p class="frase"> Ella fue mi mejor amiga del intercambio, somos almas gemelas </p>
+
+
 </body>
 
 </html>

@@ -115,3 +115,44 @@ margin-top: 15px;
 margin:0 auto;
 left: 100%;
 }
+
+.imagenPortada {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 400px; /* Ajusta el tamaño del contenedor según necesites */
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid chocolate; /* La imagen va dentro del borde */
+    margin: 50px auto; /* Centra el contenedor en la página */
+}
+
+.animated-image {
+    width: 15%; /* La imagen ocupa el 100% del contenedor */
+    height: 15%; /* La imagen ocupa el 100% del contenedor */
+    object-fit: contain; /* Asegura que la imagen llene el contenedor sin distorsionarse */
+    object-position: center; /* Mantiene la imagen centrada dentro de su propio espacio */
+    animation-name: zoomAndPan;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: cover;
+    border: 5px solid chocolate;
+}
+
+@keyframes zoomAndPan {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.2) translate(10%, 10%);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
