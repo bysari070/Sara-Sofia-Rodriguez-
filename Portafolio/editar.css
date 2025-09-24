@@ -11,6 +11,7 @@ body {
   background-size: cover;
 border: 2px solid black;
 margin: 0 auto;
+ cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;
 }
 
 .Mifoto img {
@@ -23,7 +24,7 @@ margin: 0 auto;
 
 .Mifoto:hover img {
   transform: scale(1.1); /* Aumenta el tamaño de la imagen un 10% */
-  cursor: pointer; /* Cambia el cursor para indicar interactividad */
+
 }
 
 
@@ -33,6 +34,7 @@ margin: 0 auto;
             font-style: normal;
             font-size: 5em;
             text-align: center;
+            cursor: url("https://cdn-icons-png.flaticon.com/128/13501/13501973.png"), auto;
         }
         .titulo:hover {
             font-weight: 700;
@@ -43,35 +45,42 @@ margin: 0 auto;
     .parrafo {
             color: rgb(155, 188, 253);
             font-size: 1.5em;
+            margin-left: 5em;
         }
  .parrafoo {
             color: rgb(0, 0, 0);
             font-size: 1em;
-            font-style: italic;  
+            font-style: italic;
+            margin-left: 2em;
         }
 
         .parrafo1 {
             color: rgb(0, 0, 0);
             font-size: 1.5em;
+            text-align: center;
         }
         .parrafo2 {
             color: rgb(155, 188, 253);
             font-size: 1.4em;
+            margin-left: 5em;
         }
          
         .parrafo3 {
             color: rgb(155, 188, 253);
             font-size: 1.4em;
+            margin-left: 5em;
         }
  
         .parrafo4 {
             color: rgb(155, 188, 253);
             font-size: 1.4em;
+            margin-left: 5em;
         }
  
         .parrafo5 {
             color: rgb(155, 188, 253);
             font-size: 1.4em;
+            margin-left: 5em;
         }
         
         .parrafo6 {
@@ -83,6 +92,7 @@ margin: 0 auto;
         .parrafo7 {
             color: salmon;
             font-size: 1.4em;
+            margin-left: 5em;
         }
 
   
@@ -93,6 +103,7 @@ margin: 0 auto;
 html {
   box-sizing: border-box;
   height: 100%;
+  margin-left: 5em;
 }
 
 *,
@@ -108,7 +119,7 @@ body {
   
   
   /* Código para poner un cursor personalizado*/
- /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto; */
+
 
 }
 
@@ -122,6 +133,7 @@ h1 {
 #contenedor {
   margin: auto 1em;
   text-align: center;
+
 
 }
 
@@ -162,6 +174,7 @@ h1 {
   cursor: pointer;
   font-style: oblique;
   font-weight: 1000px;
+  cursor: pointer;
 }
 
 .image-container {
@@ -192,9 +205,11 @@ margin: 0 auto;
   background-color: chocolate;
   transition: background-color 0.3s ease; /* Transición suave */
   cursor: pointer; /* Indica que es interactivo */
+
 }
 
 .elemento-hablador:hover {
   background-color: salmon; /* Cambia de color al pasar el mouse */
 }
+
 

@@ -17,11 +17,13 @@ background-size: cover;
 border: 5px solid chocolate;
 margin: 0 auto;
 position: relative;
+cursor: url("https://cdn-icons-png.flaticon.com/128/338/338191.png"), auto;
 }
 
 .parrafo {
     color: rgb(51, 114, 250);
     font-size: 1.3em;
+    margin-left: 10em;
 }
 
 .tituloViajes {
@@ -34,6 +36,7 @@ position: relative;
 .parrafito {
     color: rgb(69, 172, 136);
     font-size: 1.3em;
+    margin-left: 10em;
 }
 
 #Mifoto2 {
@@ -45,6 +48,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+ cursor: url("https://cdn-icons-png.flaticon.com/128/17943/17943538.png"), auto;
 }
 
 .frase  {
@@ -64,6 +68,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+cursor: url("https://cdn-icons-png.flaticon.com/128/996/996970.png"), auto;
 }
 #Mifoto3 {
 width: 400px;
@@ -74,6 +79,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+cursor: url("https://cdn-icons-png.flaticon.com/128/7321/7321942.png"), auto;
 }
 #Mifoto4 {
 width: 400px;
@@ -84,6 +90,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+cursor: url("https://cdn-icons-png.flaticon.com/128/15136/15136628.png"), auto;
 }
 #Mifoto5 {
 width: 400px;
@@ -94,6 +101,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+ cursor: url("https://cdn-icons-png.flaticon.com/128/5088/5088189.png"), auto;
 }
 #Mifoto6 {
 width: 400px;
@@ -104,6 +112,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+ cursor: url("https://cdn-icons-png.flaticon.com/128/5987/5987767.png"), auto;
 }
 #Mifoto7 {
 width: 400px;
@@ -114,6 +123,7 @@ border: 5px solid chocolate;
 margin-top: 15px;
 margin:0 auto;
 left: 100%;
+cursor: url("https://cdn-icons-png.flaticon.com/128/12714/12714535.png"), auto;
 }
 
 .imagenportada {
