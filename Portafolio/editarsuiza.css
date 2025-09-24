@@ -116,9 +116,11 @@ margin:0 auto;
 left: 100%;
 }
 
-.imagenPortada {
+.imagenportada {
     display: flex;
     justify-content: center;
+    align-items: center;
+    object-position: center;
 }
 
 .image-container {
@@ -150,9 +152,38 @@ left: 100%;
         transform: scale(1) translate(0, 0);
     }
     50% {
-        transform: scale(1.2) translate(10%, 10%);
+        transform: scale(1.2) translate(0.5%, 0.5%);
     }
     100% {
         transform: scale(1) translate(0, 0);
     }
 }
+
+@keyframes aparecerLetra {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .frase-animada span {
+      display: inline-block; /* Permite aplicar transformaciones y otras propiedades */
+      opacity: 0; /* Inicialmente ocultas */
+      animation-name: aparecerLetra;
+      animation-duration: 20s; /* Duración de la animación */
+      animation-delay: 1s; /* Retraso para cada letra */
+      animation-iteration-count: 1; /* Una sola vez */
+      animation-fill-mode: forwards; /* Mantiene el estado final */
+      color:rgb(180, 145, 120);
+      font-size: 1.3em;
+      font-style: italic;
+      text-align:center;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    object-position: center;
+    }
+
+    
