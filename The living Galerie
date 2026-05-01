@@ -1,0 +1,265 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>The Living Galerie</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #111;
+    color: #eee;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* TEMPORIZADOR */
+.timer {
+    width: 60px;
+    background: linear-gradient(to top, red, green);
+}
+
+/* CONTENIDO */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+h1 {
+    color: #d4a44c;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #d4a44c;
+    border: none;
+    cursor: pointer;
+}
+
+/* PANEL DERECHO */
+.sidebar {
+    width: 220px;
+    padding: 20px;
+}
+
+.box {
+    background: #ccc;
+    min-height: 80px;
+    margin-bottom: 20px;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="timer" id="timerBar"></div>
+
+    <div class="content" id="scene">
+        <h1>THE LIVING GALERIE</h1>
+        <p>Tres alas. Tres caminos. Tres vidas...</p>
+
+        <div class="buttons">
+            <button onclick="go('entrada')">Entrar</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <p>Pistas</p>
+        <div class="box" id="pistasBox"></div>
+
+        <p>Premios</p>
+        <div class="box" id="premiosBox"></div>
+
+        <p>Objetos</p>
+        <div class="box" id="objetosBox"></div>
+    </div>
+
+</div>
+
+<script>
+
+/* ESTADO DEL JUEGO */
+let objetos = [];
+let pistas = [];
+let premios = [];
+
+/* FUNCIONES PARA ACTUALIZAR UI */
+function actualizarUI() {
+    document.getElementById("objetosBox").innerHTML = objetos.join("<br>");
+    document.getElementById("pistasBox").innerHTML = pistas.join("<br>");
+    document.getElementById("premiosBox").innerHTML = premios.join("<br>");
+}
+
+/* AGREGAR ELEMENTOS */
+function addObjeto(obj) {
+    if (!objetos.includes(obj)) {
+        objetos.push(obj);
+        actualizarUI();
+    }
+}
+
+function addPista(p) {
+    if (!pistas.includes(p)) {
+        pistas.push(p);
+        actualizarUI();
+    }
+}
+
+function addPremio(p) {
+    if (!premios.includes(p)) {
+        premios.push(p);
+        actualizarUI();
+    }
+}
+
+/* TEMPORIZADOR */
+let timeLeft = 60;
+let timer = setInterval(updateTimer, 1000);
+
+function updateTimer() {
+    timeLeft--;
+    let percent = (timeLeft / 60) * 100;
+    document.getElementById("timerBar").style.height = percent + "%";
+
+    if (timeLeft <= 0) {
+        go("sinTiempo");
+    }
+}
+
+/* ESCENAS */
+function go(scene) {
+
+    const s = document.getElementById("scene");
+
+    if (scene === "entrada") {
+        s.innerHTML = `
+        <h1>ENTRADA SECRETA</h1>
+        <p>Algo no encaja desde el inicio...</p>
+
+        <div class="buttons">
+            <button onclick="go('seguridad')">Sala de seguridad</button>
+            <button onclick="go('catalogo')">Catálogo</button>
+        </div>`;
+    }
+
+    if (scene === "seguridad") {
+        addObjeto("📷 Cámara");
+        addPista("Las cámaras están manipuladas");
+
+        s.innerHTML = `
+        <h1>SALA DE SEGURIDAD</h1>
+        <p>Encuentras grabaciones incompletas...</p>
+
+        <div class="buttons">
+            <button onclick="go('archivo')">Archivo oculto</button>
+            <button onclick="go('finalMalo')">Ignorar</button>
+        </div>`;
+    }
+
+    if (scene === "catalogo") {
+        addObjeto("📚 Catálogo");
+        addPista("Obras marcadas con símbolos extraños");
+
+        s.innerHTML = `
+        <h1>CATÁLOGO</h1>
+        <p>Algo fue planeado...</p>
+
+        <div class="buttons">
+            <button onclick="go('lista')">Lista sospechosa</button>
+            <button onclick="go('archivo')">Archivo oculto</button>
+        </div>`;
+    }
+
+    if (scene === "lista") {
+        addObjeto("🧾 Lista");
+        addPista("Un nombre está tachado");
+
+        s.innerHTML = `
+        <h1>LISTA DE COMPRADORES</h1>
+
+        <div class="buttons">
+            <button onclick="go('finalBueno')">Confrontar a Jaime</button>
+            <button onclick="go('archivo')">Seguir investigando</button>
+        </div>`;
+    }
+
+    if (scene === "archivo") {
+        addObjeto("📂 Archivo");
+        addPista("Documentos ocultos revelan conexiones");
+
+        s.innerHTML = `
+        <h1>ARCHIVO OCULTO</h1>
+
+        <div class="buttons">
+            <button onclick="go('pintura')">Revisar pintura</button>
+            <button onclick="go('finalError')">Ignorar</button>
+        </div>`;
+    }
+
+    if (scene === "pintura") {
+        addObjeto("🖼️ Pintura");
+        addPremio("Descubriste la verdad");
+
+        s.innerHTML = `
+        <h1>PINTURA OCULTA</h1>
+
+        <div class="buttons">
+            <button onclick="go('finalBueno')">Acusar correctamente</button>
+        </div>`;
+    }
+
+    /* FINALES */
+
+    if (scene === "finalBueno") {
+        clearInterval(timer);
+
+        s.innerHTML = `
+        <h1>FINAL - JUSTICIA</h1>
+        <p>Resolviste el caso.</p>
+        <button onclick="location.reload()">Intentar de nuevo</button>`;
+    }
+
+    if (scene === "finalError") {
+        clearInterval(timer);
+
+        s.innerHTML = `
+        <h1>FINAL - ERROR FATAL</h1>
+        <p>Elegiste mal.</p>
+        <button onclick="location.reload()">Intentar de nuevo</button>`;
+    }
+
+    if (scene === "finalMalo") {
+        clearInterval(timer);
+
+        s.innerHTML = `
+        <h1>FINAL - LAS SOMBRAS GANAN</h1>
+        <p>No descubriste la verdad.</p>
+        <button onclick="location.reload()">Intentar de nuevo</button>`;
+    }
+
+    if (scene === "sinTiempo") {
+        clearInterval(timer);
+
+        s.innerHTML = `
+        <h1>TE QUEDASTE SIN TIEMPO</h1>
+        <button onclick="location.reload()">Intentar de nuevo</button>`;
+    }
+}
+
+</script>
+
+</body>
+</html>
+```
